@@ -81,6 +81,9 @@
       if (typeof val === "undefined") {
         return "";
       }
+      if (typeof val === "number") {
+        val = val.toString()
+      }
 
       if (escapeValues) {
         val = val.replace(/\'/g, "\\'");
