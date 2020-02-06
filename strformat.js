@@ -32,7 +32,7 @@
     var a = s.split(".");
     while (a.length) {
       var n = a.shift();
-      if (n in o) {
+      if (o && n in o) {
         o = o[n];
       } else {
         return;
