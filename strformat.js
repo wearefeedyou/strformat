@@ -86,6 +86,10 @@
       }
 
       if (escapeValues) {
+        if (typeof val === "boolean") {
+          val = val.toString()
+        }
+        
         val = val.replace(/\'/g, "\\'");
         val = val.replace(/\"/g, '\\"');
       }
