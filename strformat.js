@@ -84,6 +84,9 @@
       if (typeof val === "number") {
         val = val.toString()
       }
+      if (typeof val === "object") {
+        val = JSON.stringify(val)
+      }
 
       if (escapeValues) {
         if (typeof val === "boolean") {
