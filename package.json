@@ -6,18 +6,22 @@
         "string",
         "format"
     ],
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://www.opensource.org/licenses/MIT"
-    }],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
     "author": {
         "name": "Frank Hellwig",
         "email": "frank@hellwig.org"
     },
-    "contributors": [{
-        "name": "Johan Hernandez",
-        "email": "johan@firebase.co"
-    }],
+    "contributors": [
+        {
+            "name": "Johan Hernandez",
+            "email": "johan@firebase.co"
+        }
+    ],
     "scripts": {
         "test": "node test/test.js"
     },

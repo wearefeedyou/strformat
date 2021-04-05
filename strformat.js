@@ -77,7 +77,13 @@
       if (m == "}}") {
         return "}";
       }
+      
       var val = getProperty(args, n);
+
+      if (n.endsWith('@answer') && typeof val === "undefined") {
+        val = getProperty(args, n.slice(0, -7));
+      }
+
       if (typeof val === "undefined") {
         return "";
       }
